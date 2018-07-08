@@ -1,6 +1,8 @@
 {% extends "layouts.html" %}
 {% block content %}
+  <ul class="list-group justify-content-center">
   {% for link in links_to_code%}
-    <div>{{link}}</div>
+    <li class="list-group-item text-center"><a href={{link}}>{{link}}</a></li>
   {% endfor %}
+  </ul>
 {% endblock %}
