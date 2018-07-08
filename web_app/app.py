@@ -13,7 +13,7 @@ def coding():
 
 @app.route('/jobs')
 def jobs():
-    return render_template('job.html')
+    return render_template('jobs.html')
 
 @app.route('/housing')
 def housing():
