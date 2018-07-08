@@ -1,4 +1,46 @@
 {% extends "layouts.html" %}
 {% block content %}
   <h1>Housing</h1>
+  <h3>Family Housing</h3>
+  <table class="table table-hover">
+    <tr>
+        <td>
+          <b>Bayview Access Point</b>
+          <p>1641 LaSalle Avenue</p>
+          <p>San Francisco, CA 94124</p>
+          <p>Phone Number: 415-430-6320</p>
+          Website: <a href="https://catholiccharitiessf.org/our-programs/accesspoint/">catholiccharitiessf</a>
+        </td>
+        <td>
+
+          <b>Central City Access Point</b>
+          <p>995 Market Street, 5th Floor</p>
+          <p>San Francisco, CA 94103</p>
+          <p>Phone Number: 415-644-0504</p>
+          Website: <a href="https://www.compass-sf.org/">Comapss-sf</a>
+        </td>
+      </tr>
+        <tr><td><h3>Veterans</h3></td></tr>
+          <tr>
+              <td>
+                <a href="https://www.swords-to-plowshares.org/">Swords to Plowshares</a>
+                <p>1060 Howard Street</p>
+                <p>San Francisco CA 94103</p>
+                <p>415-252-4788</p>
+              </td>
+            <td>
+            <a href="Veterans Administration Downtown Clinic">Veterans Administration Downtown Clinic</a>
+            <p>401 3rd Street</p>
+            <p>San Francisco, CA 94107</p>
+            <p>415-281-5100</p>
+            National Hotline for Homeless Veterans: 1-877-4AID-VET (1-877-424-3838)
+          </td>
+          </tr>
+          <tr><td><h3>Youth</h3></td></tr>
+          <tr>
+              {%for i in housing_links%}
+                <td><a href="{{i}}">{{i}}</a></td><br />
+              {%endfor%}
+          </tr>
+  </table>
 {% endblock %}
